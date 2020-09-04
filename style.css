@@ -1,43 +1,82 @@
+
+html, body {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  font-weight: 300;
+  line-height: 1.5;
+}
+
 body {
-	font-family: Georgia, serif;
-	height: 100%;
-	margin: 0;
-	text-align: center;
-	width: 100%;
+  font-family: 'Lato', sans-serif;
+  background-image: url('https://s3.amazonaws.com/codecademy-content/projects/make-a-website/lesson-3/background.jpg');
+  background-position: center top;
+  background-size: cover;
+  margin: 0;
 }
 
-h1 {
-	font-size: 32px;
+.page-title {
+  text-align: center;
+  font-weight: 100;
 }
 
-h2 {
-	color: #ffffff;
-	font-size: 56px; 
+.page-description {
+  border: 1px solid #000;
+  text-align: center;
+  padding: 30px;
 }
 
-
-.hero {
-	background-image: url('https://s3.amazonaws.com/codecademy-content/projects/make-a-website/lesson-2/bg.jpg');
-	background-position: center top;
-	background-size: cover;
-	padding: 250px 0;
-	margin: 30px;
-	text-shadow: 0 2px #000000;
-	font-family: 'Trebuchet MS', 'Helvetica';
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
 }
 
-p {
-	color: #ffffff;
-	font-size: 2em;
+.gallery-item {
+  margin: 20px;
+  border: 5px solid #FFF;
 }
 
-.hero a {
-	color: #00FFAA;
-	font-size: 24px;
-	text-decoration: none;
+.gallery-item .thumbnail {
+
 }
 
-#footer {
-	color: DarkSlateGray;
-	font-size: 16px;
+/* FOOTER NAVIGATION */
+
+nav {
+  background-color: #FFF;
+}
+
+nav li {
+  margin: 0;
+  padding: 0 10px;
+  display: inline;
+}
+
+nav ul {
+  display: inline;
+}
+
+.contact-btn {
+  float: right;
+}
+
+.contact-btn a {
+  margin-right: 30px;
+  padding: 8px 18px;
+  border: 1px solid #204156;
+
+}
+
+.contact-btn a:active {
+  position: relative;
+  bottom: 2px;
+}
+
+nav a {
+  height: 60px;
+  line-height: 60px;
+  color: #204156;
+  text-decoration: none;
 }
